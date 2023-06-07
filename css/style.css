@@ -125,59 +125,55 @@ body {
     font-weight: 800;
 }
 
-form {
+.form-section {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 4%;
 }
 
-.table-1 {
-    display: grid;
-    grid-column: 1 / 2;
-    margin-right: 0%;
-    padding-right: 0%;
+form {
+    color:#663c28;
+    font-family: helvetica;
+    font-weight: bold;
+    inline-size: fit-content;
 }
 
-textarea {
-    inline-size: 100%;
+input, textarea, text {
+    color:#663c28;
+    font-family: helvetica;
+    font-weight: bold;
+    background-color: rgb(255, 252, 241,0.7);
+    border-radius: 5px;
+    border-style: hidden;
+    cursor: pointer;
 }
 
-.form-text {
+.formtext {
     color:#663c28;
     font-family: helvetica;
     font-weight: bold;
 }
 
 .table-2 {
-    border: 3px solid #472519;
+    border: 2px solid #472519;
     border-radius: 8px;
+    padding: 2%;
 }
 
-.typeform {
-    color:#7f5430;
-    font-family: helvetica;
-    background-color: rgb(255, 252, 241,0.7);
-    border-radius: 5px;
-    border-style: hidden;
-}
-
-.typeform2 {
-    color:#7f5430;
-    font-family: helvetica;
-}
-
-.submit {
+.submit-button {
     inline-size: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     cursor: pointer;
 }
 
-.submit:hover {
+.submit-button:hover {
     background: #472519;
     color: #efefef;
-    margin-top: -3px;
-    margin-left: -6px;
+    margin-top: -2px;
+    margin-left: -4px;
     border-radius: 8px;
-    box-shadow: 3px 3px 1px rgb(225, 160, 61,0.9);
+    box-shadow: 2px 2px 1px rgb(225, 160, 61,0.9);
     text-shadow: 1px 1px #d46a00;
 }
 
