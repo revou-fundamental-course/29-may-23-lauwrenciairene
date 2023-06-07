@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>    
+<body>
     <header>
         <img src="assets/revou logo.svg" alt="revoU logo" class="logo">
         <div class="nav-bar">
@@ -17,8 +22,8 @@
             <div id="message" class="nav-items">Message Us</div>
         </div>
     </header>
-    
-        <div id="Hero-section" class="Hero">
+
+    <div id="Hero-section" class="Hero">
         <h1 class="h1-hero">Hi, <span id="nama"></span>. Welcome to Website!</h1>
         <script src="js/script.js"></script>
         <h2 class="h2-hero">Ini adalah website latihan pertama.</h2>
@@ -37,5 +42,41 @@
             <img src="assets/surabaya.webp" alt="Surabaya" class=Headquarters-Image></img>
             <p class=headquarters-text>Surabaya</p></div>
         </div>
+    <div id="Message-Us-section" class="Message-Us">
+        <h1 class="message-us">Message Us</h1>
+        <div class="form-section">
+        <form name="message-form" onsubmit="return validateForm()">
+            Nama: 
+            <input placeholder="Nama" type="text" name="full-name" />
+            <br />
+
+            Tanggal Lahir: 
+            <input type="date" name="birth-date" />
+            <br />
+
+            Jenis Kelamin:
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Laki-Laki</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Perempuan</label>
+            <br />
+
+            Pesan:
+            <textarea placeholder="Pesan" name="messages"></textarea>
+            <br />
+
+            <input class="submit-button" type="submit" value="Submit" />
+
+        </form>
+    
+    <div class="table-2">
+        <p class="formtext">Current Time: <span id="current-time"></span></p>
+        <p class="formtext">Nama: <span id=sender-full-name></span></p>
+        <p class="formtext">Tanggal Lahir: <span id=sender-birth-date></span></p>
+        <p class="formtext">Jenis Kelamin: <span id=sender-gender></span></p>
+        <p class="formtext">Pesan: <span id=sender-messages></span></p>
+    </div>
+    </div>
+    <footer>Created by Lauwrencia Irene Samiaji</footer>
 </body>
 </html>
